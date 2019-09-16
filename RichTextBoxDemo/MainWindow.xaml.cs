@@ -43,7 +43,7 @@ namespace RichTextBoxDemo
         Dispatcher.BeginInvoke(new Action(() => {
           textbox1.Focus();
         }), DispatcherPriority.Input);
-        SendToUIThread(textbox1, "e");
+        SendToUIThread(textbox1, "s");
         if (DelayTest) Thread.Sleep(10 * 100);
         SendToUIThread(textbox1, "{ENTER}");
       });
@@ -97,7 +97,7 @@ namespace RichTextBoxDemo
 
     private Dictionary<string, string> abbreviations = new Dictionary<string, string>()
     {
-      {"BAE", "biaterial enlargement" },
+      {"SSS", "small sample size" },
     };
 
     private char[] delimiters = { ' ', '\n', ',' };
